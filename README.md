@@ -1,7 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Disbursement model:
+  - order_id
+  - amount
+  - merchant_id (?)
+
+calculate_disbursement(date)
+- get week range date
+- find orders with completed_at in week range
+- for each order, create disbursement
+* use background job
+* optional: create rake task to run background job (?)
+
+
 
 Things you may want to cover:
 

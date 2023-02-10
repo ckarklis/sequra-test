@@ -4,5 +4,4 @@ FactoryBot.define do
     email  { "info@flatley-rowe.com" }
     cif { "B611111111" }
   end
-
 end

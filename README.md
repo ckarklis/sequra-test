@@ -1,9 +1,5 @@
 # README
 
-Disbursement model:
-  - order_id
-  - amount
-  - merchant_id (?)
 
 calculate_disbursement(date)
 - get week range date

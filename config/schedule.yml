@@ -1,0 +1,3 @@
+create_disbursement_for_orders_job:
+   cron: "0 0 * * MON"
+   class: "CreateDisbursementForOrdersWorker"

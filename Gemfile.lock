@@ -85,14 +85,22 @@ GEM
     date (3.3.3)
     diff-lcs (1.4.4)
     erubi (1.12.0)
+    et-orbi (1.2.7)
+      tzinfo
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
     ffi (1.15.5)
+    fugit (1.8.1)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    has_scope (0.8.1)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
@@ -133,6 +141,7 @@ GEM
     public_suffix (5.0.1)
     puma (4.3.12)
       nio4r (~> 2.0)
+    raabro (1.4.0)
     racc (1.6.2)
     rack (2.2.6.2)
     rack-proxy (0.7.6)
@@ -210,6 +219,9 @@ GEM
       connection_pool (>= 2.2.5, < 3)
       rack (~> 2.0)
       redis (>= 4.5.0, < 5)
+    sidekiq-cron (1.9.1)
+      fugit (~> 1.8)
+      sidekiq (>= 4.2.1)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -259,6 +271,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   database_cleaner
   factory_bot_rails
+  has_scope
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
@@ -269,6 +282,7 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers (~> 5.0)
   sidekiq (~> 6.5)
+  sidekiq-cron
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
